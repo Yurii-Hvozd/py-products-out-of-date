@@ -26,6 +26,46 @@ from unittest import mock
                 }
             ],
             ["salmon", "chicken", "duck"]
+        ),
+        (
+[
+                {
+                    "name": "salmon",
+                    "expiration_date": datetime.date(2026, 5, 2),
+                    "price": 600
+                },
+                {
+                    "name": "chicken",
+                    "expiration_date": datetime.date(2022, 2, 5),
+                    "price": 120
+                },
+                {
+                    "name": "duck",
+                    "expiration_date": datetime.date(2022, 2, 1),
+                    "price": 160
+                }
+            ],
+            ["chicken", "duck"]
+        ),
+        (
+[
+                {
+                    "name": "salmon",
+                    "expiration_date": datetime.date(2026, 5, 1),
+                    "price": 600
+                },
+                {
+                    "name": "chicken",
+                    "expiration_date": datetime.date(2026, 5, 1),
+                    "price": 120
+                },
+                {
+                    "name": "duck",
+                    "expiration_date": datetime.date(2026, 5, 1),
+                    "price": 160
+                }
+            ],
+            ["salmon", "chicken", "duck"]
         )
     ]
 )
